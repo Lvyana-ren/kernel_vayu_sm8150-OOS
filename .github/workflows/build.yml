@@ -179,7 +179,7 @@ jobs:
           )
           KMAKE=(make ARCH=arm64 O=out "${LLVM_VARS[@]}")
 
-          "${KMAKE[@]}" vayu_oxygenos_defconfig
+          "${KMAKE[@]}" vayu_defconfig
 
           scripts/config --file out/.config \
             --set-str LOCALVERSION "-Xen+3" \
